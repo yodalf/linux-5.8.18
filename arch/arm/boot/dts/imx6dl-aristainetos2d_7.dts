@@ -17,6 +17,10 @@
 		reg = <0x10000000 0x40000000>;
 	};
 
+    chosen {
+        stdout-path = &uart1;
+    };
+
 	panel: panel {
 		compatible = "lg,lb070wv8";
 		backlight = <&backlight>;
